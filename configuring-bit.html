@@ -1,0 +1,1012 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Configuring Bit · Bit - distributed component manager</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="teambit">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="configuring-bit.html" />
+    
+    
+    <link rel="prev" href="bit-scope.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installing Bit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#create-your-first-code-component">
+            
+                    
+                    Create your first code component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#setup-a-remote-scope">
+            
+                    
+                    Setup a Remote Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html#export-a-component">
+            
+                    
+                    Export a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="getting-started.html">
+            
+                <a href="getting-started.html#import-a-component">
+            
+                    
+                    Import a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="getting-started.html">
+            
+                <a href="getting-started.html#modify-a-component">
+            
+                    
+                    Modify a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="getting-started.html">
+            
+                <a href="getting-started.html#use-a-compiler">
+            
+                    
+                    Use a compiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="getting-started.html">
+            
+                <a href="getting-started.html#test-a-component">
+            
+                    
+                    Test a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="getting-started.html">
+            
+                <a href="getting-started.html#find-a-component">
+            
+                    
+                    Find a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="bit-component.html">
+            
+                <a href="bit-component.html">
+            
+                    
+                    Bit Component
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="bit-component.html">
+            
+                <a href="bit-component.html#what-is-a-bit-component">
+            
+                    
+                    What is a Bit Component?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-id">
+            
+                    
+                    Component ID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-versioning">
+            
+                    
+                    Component Versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-documentation">
+            
+                    
+                    Component Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-debugging">
+            
+                    
+                    Component Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-environment">
+            
+                    
+                    Component Environment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="bit-component.html">
+            
+                <a href="bit-component.html#build-environment">
+            
+                    
+                    Build Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="bit-component.html">
+            
+                <a href="bit-component.html#testing-environment">
+            
+                    
+                    Testing Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html">
+            
+                    
+                    Bit Scope
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#what-is-a-bit-scope">
+            
+                    
+                    What is a Bit Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#component-store">
+            
+                    
+                    Component Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#dependency-management">
+            
+                    
+                    Dependency Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#scope-ci">
+            
+                    
+                    Scope CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#discoverability">
+            
+                    
+                    Discoverability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.6" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html">
+            
+                    
+                    Configuring Bit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#general-configuration">
+            
+                    
+                    General configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#bitjson">
+            
+                    
+                    bit.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#scopejson">
+            
+                    
+                    scope.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html">
+            
+                    
+                    Bit on the Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#protocols">
+            
+                    
+                    Protocols
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#setting-up-a-server">
+            
+                    
+                    Setting up a server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#generating-your-ssh-public-key">
+            
+                    
+                    Generating your SSH public key
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html">
+            
+                    
+                    Bit Internals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html#bit-objects">
+            
+                    
+                    Bit Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html#jsdoc-parsing">
+            
+                    
+                    JSDoc parsing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="cli-reference.html">
+            
+                <a href="cli-reference.html">
+            
+                    
+                    CLI Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="drivers.html">
+            
+                <a href="drivers.html">
+            
+                    
+                    Drivers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="drivers.html">
+            
+                <a href="drivers.html#javascript">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="drivers.html">
+            
+                <a href="drivers.html#runtime-dependency-resolution">
+            
+                    
+                    Runtime Dependency Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="bitsource.html">
+            
+                <a href="bitsource.html">
+            
+                    
+                    BitSource
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Configuring Bit</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="configuring-bit">Configuring Bit</h1>
+<h2 id="general-configuration">General configuration</h2>
+<p>The general (global) configuration is configured through the <code>bit config</code> command.</p>
+<p>You can learn more by typing <code>bit config --help</code> in the terminal.</p>
+<table>
+<thead>
+<tr>
+<th>key</th>
+<th style="text-align:center">Required</th>
+<th style="text-align:center">Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ssh_key_file</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">String</td>
+<td>A path to an ssh key file, defaults to &quot;~/.ssh/id_rsa&quot;</td>
+</tr>
+<tr>
+<td>user.email</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">String</td>
+<td>The Email of the user, will be saved on the commit logs</td>
+</tr>
+<tr>
+<td>user.name</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">String</td>
+<td>The name of the user, will be saved on the commit logs</td>
+</tr>
+<tr>
+<td>hub_domain</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">String</td>
+<td>The domain of the default hub, defaults to &quot;hub.bitsrc.io&quot;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="your-identity">Your Identity</h3>
+<p>The first thing you should do when you install Bit is to set your user name and e-mail address. This is important because every component&apos;s commit uses this information, and it&#x2019;s immutable after you perform a commit:</p>
+<p><code>bit config set user.name &quot;mickey mouse&quot;</code></p>
+<p><code>bit config set user.email mickey@example.com</code></p>
+<h2 id="bitjson">bit.json</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Required</th>
+<th style="text-align:center">Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>dependencies</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">Object</td>
+<td>The other components that the component is dependent on</td>
+</tr>
+<tr>
+<td>packageDependencies</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">Object</td>
+<td>The npm packages that the component is dependent on</td>
+</tr>
+<tr>
+<td>env</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">Object</td>
+<td>An object describing the component environments</td>
+</tr>
+<tr>
+<td>env.compiler</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">String</td>
+<td>The component id of the compiler</td>
+</tr>
+<tr>
+<td>env.tester</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">String</td>
+<td>The component id of the compiler</td>
+</tr>
+<tr>
+<td>sources</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">Object</td>
+<td>An object describing the component sources</td>
+</tr>
+<tr>
+<td>sources.impl</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">String</td>
+<td>The component implementation file name</td>
+</tr>
+<tr>
+<td>sources.spec</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">String</td>
+<td>The component spec file name</td>
+</tr>
+<tr>
+<td>language</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">String</td>
+<td>The component&apos;s programming language</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;sources&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;impl&quot;</span><span class="token operator">:</span> <span class="token string">&quot;impl.js&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;spec&quot;</span><span class="token operator">:</span> <span class="token string">&quot;spec.js&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;env&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;compiler&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bit.envs/compilers/flow::latest&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;tester&quot;</span><span class="token operator">:</span> <span class="token string">&quot;bit.envs/testers/mocha-chai::latest&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;dependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;bit.utils/is-string&quot;</span><span class="token operator">:</span> <span class="token string">&quot;latest&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;packageDependencies&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;camelcase&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4.0.0&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;language&quot;</span><span class="token operator">:</span> <span class="token string">&quot;javascript&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h2 id="scopejson">scope.json</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th style="text-align:center">Required</th>
+<th style="text-align:center">Type</th>
+<th>Details</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>name</td>
+<td style="text-align:center">T</td>
+<td style="text-align:center">String</td>
+<td>The scope name</td>
+</tr>
+<tr>
+<td>remotes</td>
+<td style="text-align:center">F</td>
+<td style="text-align:center">Object</td>
+<td>scopes remotes</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example</strong></p>
+<pre class="language-"><code class="lang-json"><span class="token punctuation">{</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;scopy&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;remotes&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<h1 id="folders">Folders</h1>
+<p>  Folder structure used by Bit.</p>
+<p>Bit stores information in several folders and files on your machine. This section describes the
+various locations on these items, and their responsibilities.</p>
+<h2 id="cache">Cache</h2>
+<h3 id="location">Location</h3>
+<p>Depending on your OS, Bit stores it&apos;s cache folder in the following locations:</p>
+<ul>
+<li>MacOS - /Library/Caches/Bit</li>
+<li>Windows - %LOCAL-APP-DATA%\Bit</li>
+<li>Linux - ~/.bit</li>
+</ul>
+<h3 id="structure">Structure</h3>
+<ul>
+<li>modules - Cache for various node modules used by Bit.</li>
+<li>config - stores Bit specific configurations.<ul>
+<li>config.json - stores all the configurations required for Bit to operate (location of SSH keys,
+username, email...)</li>
+<li>global-remotes.json - Manages the list of the remote scopes connected to the machine.</li>
+</ul>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="bit-scope.html#discoverability" class="navigation navigation-prev " aria-label="Previous page: Discoverability">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="configuring-bit.html#general-configuration" class="navigation navigation-next " aria-label="Next page: General configuration">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Configuring Bit","level":"1.6","depth":1,"next":{"title":"General configuration","level":"1.6.1","depth":2,"anchor":"#general-configuration","path":"configuring-bit.md","ref":"configuring-bit.md#general-configuration","articles":[]},"previous":{"title":"Discoverability","level":"1.5.5","depth":2,"anchor":"#discoverability","path":"bit-scope.md","ref":"bit-scope.md#discoverability","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","prism","-highlight"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://teambit.github.io/bit/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"teambit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRODUCTION.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.6.2"},"title":"Bit - distributed component manager","language":"en","gitbook":">= 3.2.0"},"file":{"path":"configuring-bit.md","mtime":"2017-05-18T10:56:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-23T09:03:02.353Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

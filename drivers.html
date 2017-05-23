@@ -1,0 +1,930 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Drivers · Bit - distributed component manager</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="teambit">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="drivers.html" />
+    
+    
+    <link rel="prev" href="cli-reference.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installing Bit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#create-your-first-code-component">
+            
+                    
+                    Create your first code component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#setup-a-remote-scope">
+            
+                    
+                    Setup a Remote Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html#export-a-component">
+            
+                    
+                    Export a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="getting-started.html">
+            
+                <a href="getting-started.html#import-a-component">
+            
+                    
+                    Import a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="getting-started.html">
+            
+                <a href="getting-started.html#modify-a-component">
+            
+                    
+                    Modify a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="getting-started.html">
+            
+                <a href="getting-started.html#use-a-compiler">
+            
+                    
+                    Use a compiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="getting-started.html">
+            
+                <a href="getting-started.html#test-a-component">
+            
+                    
+                    Test a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="getting-started.html">
+            
+                <a href="getting-started.html#find-a-component">
+            
+                    
+                    Find a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="bit-component.html">
+            
+                <a href="bit-component.html">
+            
+                    
+                    Bit Component
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="bit-component.html">
+            
+                <a href="bit-component.html#what-is-a-bit-component">
+            
+                    
+                    What is a Bit Component?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-id">
+            
+                    
+                    Component ID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-versioning">
+            
+                    
+                    Component Versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-documentation">
+            
+                    
+                    Component Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-debugging">
+            
+                    
+                    Component Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-environment">
+            
+                    
+                    Component Environment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="bit-component.html">
+            
+                <a href="bit-component.html#build-environment">
+            
+                    
+                    Build Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="bit-component.html">
+            
+                <a href="bit-component.html#testing-environment">
+            
+                    
+                    Testing Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html">
+            
+                    
+                    Bit Scope
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#what-is-a-bit-scope">
+            
+                    
+                    What is a Bit Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#component-store">
+            
+                    
+                    Component Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#dependency-management">
+            
+                    
+                    Dependency Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#scope-ci">
+            
+                    
+                    Scope CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#discoverability">
+            
+                    
+                    Discoverability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html">
+            
+                    
+                    Configuring Bit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#general-configuration">
+            
+                    
+                    General configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#bitjson">
+            
+                    
+                    bit.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#scopejson">
+            
+                    
+                    scope.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html">
+            
+                    
+                    Bit on the Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#protocols">
+            
+                    
+                    Protocols
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#setting-up-a-server">
+            
+                    
+                    Setting up a server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#generating-your-ssh-public-key">
+            
+                    
+                    Generating your SSH public key
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html">
+            
+                    
+                    Bit Internals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html#bit-objects">
+            
+                    
+                    Bit Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html#jsdoc-parsing">
+            
+                    
+                    JSDoc parsing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="cli-reference.html">
+            
+                <a href="cli-reference.html">
+            
+                    
+                    CLI Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.11" data-path="drivers.html">
+            
+                <a href="drivers.html">
+            
+                    
+                    Drivers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="drivers.html">
+            
+                <a href="drivers.html#javascript">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="drivers.html">
+            
+                <a href="drivers.html#runtime-dependency-resolution">
+            
+                    
+                    Runtime Dependency Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="bitsource.html">
+            
+                <a href="bitsource.html">
+            
+                    
+                    BitSource
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Drivers</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="drivers">Drivers</h1>
+<p>Bit components are language agnostic. You can write components in any language you&apos;d like, and Bit will be able to manage them. To facilitate this behavior Bit requires a driver for each programming language, so that the components will be accessible to used in your code.</p>
+<h3 id="what-does-the-driver-do">What does the driver do?</h3>
+<p>Drivers are responsible for several tasks:</p>
+<ol>
+<li>Importing all the component dependencies according to the <code>bit.json</code> file.</li>
+<li>Creating and maintainig all relevant links for the language-specific development environment, of the components imported/created/managed by Bit..<ul>
+<li>For example - in JavaScript, to use a module via <code>import</code> or <code>require</code>, the module will need to be in the <code>node_modules</code> direcotry, so in this case the driver maintains a dynamic-module with links back to the <code>components</code> directory, where all components are stored.</li>
+</ul>
+</li>
+</ol>
+<p>For example, when importing a component, Bit downloads them to the &apos;components&apos; directory. However, in order for a programing lanuage to recognize and work with this directory, some work needs to be done. </p>
+<p>In this docs we will describe all currently available drivers.</p>
+<h3 id="how-to-set-a-driver">How to set a driver</h3>
+<p>By default the language is Javascript, to change it, edit your bit.json file and change the &apos;language&apos; attribute.</p>
+<h3 id="drivers-are-simply-devdependencies">Drivers are simply devDependencies</h3>
+<p>Bit drivers are only required when developing or building projects. They are there simply to create the virtual library. Once the virtual library is set according to your project&apos;s bit.json file. You&apos;ll be able to require/import the components just like you&apos;ll do from any other node module.</p>
+<p>The driver is able to import the components for you, so it&apos;s not always a must.
+I think we just need to find a solution for npm distributions.</p>
+<h3 id="component-dependencies">Component Dependencies</h3>
+<p>Bit manages all of its component&apos;s package dependencies in it&apos;s own <code>components</code> directory, so not to interfere with your project&apos;s environment.</p>
+<h3 id="component-runtime-dependencies">Component Runtime Dependencies</h3>
+<p>When importing new components that have runtime dependencies to your code, the driver will evaluate if your runtime dependencies are met with the requirements of the component you just imported. If there is a mismatch, or your project is missing a dependency to allow the component to run, Bit will ask you to add it to your list of runtime dependencies (Bit also checks for SemVer competibility of dependencies).</p>
+<h3 id="components-in-runtime">Components in Runtime</h3>
+<p>Due to the fact that all Bit components are linked to th virtual directory generated, it utilizes <code>node module</code> resolution algorithm, to allow <code>require</code> and <code>import</code> them. This means that there are no special steps you need to take when running applications that using Bit. Not even adding any runtime dependency.</p>
+<h2 id="how-bit-uses-its-drivers">How Bit uses it&apos;s Drivers</h2>
+<p>When any of Bit&apos;s lifecycle commands are triggered, Bit will call the driver&apos;s <code>bind</code> hook so it will update the virtual library for the specific environment.</p>
+<p>These are Bit&apos;s lifecycle commands.:</p>
+<ul>
+<li>create</li>
+<li>commit</li>
+<li>modify</li>
+<li>export</li>
+<li>import</li>
+</ul>
+<p>Bit knows which driver it needs to look for according to the project&apos;s language attribute from it&apos;s <a href="configuring-bit.mdl#bitjson">bit.json</a> file. Once Bit figured out which driver it needs, it will simply try to <code>require</code> for the driver in the directory that the command ran in. So if the driver is installed as a devDependency, it will be able to find it in the project&apos;s node_modules directory, just like any other module.</p>
+<h2 id="javascript">JavaScript</h2>
+<p>Bit&apos;s first fully supported programming language is JavaScript.</p>
+<p>You can find the bit-javascript driver codebase <a href="https://github.com/teambit/bit-js" target="_blank">here</a>.</p>
+<h3 id="javascript-virtual-library">JavaScript Virtual Library</h3>
+<p>All your project dependencies for your project are located in the <code>node_modules</code> directory. If you&apos;re using NodeJS, all the external dependencies for your project are located in the node_modules directory. To run this code in a web browser, you can use Webpack/browserify, which are module bundlers.</p>
+<p>In order to support NodeJS + bundlers for web, Bit-javascript creates a virtual module called bit within the node_modules directory. This is done by generating a directory tree that contains links to the components directory. This way all components are requireable by NodeJS, and have auto-complete, distructuring and all other features you are used to.</p>
+<p>It&apos;s important to note that the APIs that will be published to the virtual directory are only the ones listed in your project&apos;s bit.json file. So if any of your components has internal dependency (which is in the components directory), you will not have access to it via <code>require</code>.</p>
+<p>For example, I have all these components imported to my project:</p>
+<ul>
+<li>bit.utils/array/diff</li>
+<li>bit.utils/global/is-string</li>
+</ul>
+<p>So my virtual module will look like this:</p>
+<pre class="language-"><code>&#x203A; tree node_modules/bit
+node_modules/bit
+&#x251C;&#x2500;&#x2500; array
+&#x2502;   &#x251C;&#x2500;&#x2500; diff
+&#x2502;   &#x2502;   &#x2514;&#x2500;&#x2500; index.js
+&#x2502;   &#x2514;&#x2500;&#x2500; index.js
+&#x251C;&#x2500;&#x2500; global
+&#x2502;   &#x251C;&#x2500;&#x2500; index.js
+&#x2502;   &#x2514;&#x2500;&#x2500; is-string
+&#x2502;       &#x2514;&#x2500;&#x2500; index.js
+&#x2514;&#x2500;&#x2500; index.js
+</code></pre><p>Now, when looking at the code written in each of the <code>index.js</code> files, we will simply see a <code>require</code> statement linking back to the real implementation of the component. For example:</p>
+<pre class="language-"><code>&#x203A; cat node_modules/bit/array/diff/index.js
+module.exports = require(&apos;../../../../components/array/diff/bit.utils/2/dist/impl.js&apos;);
+</code></pre><h2 id="using-javascript-components">Using JavaScript Components</h2>
+<p>You can use bit components in your JS code with node standard module resolution syntax.</p>
+<p>For example, requiring a component &apos;is-string&apos; inside &apos;utils&apos; namespace:</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">const</span> isString <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&apos;bit/utils/is-string&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token function">isString</span><span class="token punctuation">(</span><span class="token string">&apos;Hello World&apos;</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Or, using the ES6 import syntax</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> isString <span class="token keyword">from</span> <span class="token string">&apos;bit/utils/is-string&apos;</span><span class="token punctuation">;</span>
+</code></pre>
+<p>Import with destructuring assignment syntax is available as well</p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> isString <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;bit/utils&apos;</span><span class="token punctuation">;</span>
+</code></pre>
+<p>You can also destructure namespaces from the bit module itself. </p>
+<pre class="language-"><code class="lang-js"><span class="token keyword">import</span> <span class="token punctuation">{</span> utils <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">&apos;bit&apos;</span><span class="token punctuation">;</span>
+</code></pre>
+<h2 id="how-does-the-above-syntax-actually-work">How does the above syntax actually work?</h2>
+<p><code>bit-javascript</code> driver creates a &quot;public-api&quot; by generating &quot;index.js&quot; files in the <code>node_modules/bit</code> directory.
+These index.js files are links to the actual implementation files, which are located in &quot;components&quot; and &quot;inline_components&quot; directories.</p>
+<p>To find the components that need public-api, the driver follows specific strategies one by one, each strategy may override the previous strategy.</p>
+<ol>
+<li>Components that were created locally and committed. These components are in &quot;components&quot; directory and not mentioned in bit.json</li>
+<li>Components that are mentioned in bit.json file as dependencies and are in &quot;components&quot; directory.</li>
+<li>Inline components, which are components located in &quot;inline_components&quot; directory.</li>
+</ol>
+<h3 id="installing-bit-js">Installing bit-js</h3>
+<p>For most cases, this is not needed. The bit-js driver is already shipped with bit. It has some commands thought you might find helpful.
+Bit Node driver is distributed as any other JavaScript package - using <a href="https://www.npmjs.com/package/bit-node" target="_blank">NPM</a>.</p>
+<p>To install bit-javascript package, run:</p>
+<pre class="language-"><code class="lang-sh"><span class="token function">npm</span> <span class="token function">install</span> bit-javascript --save-dev
+</code></pre>
+<p>This will add the bit-node package as a dependency.</p>
+<h2 id="using-javascript-driver-in-a-build-process">Using JavaScript driver in a build process</h2>
+<p>If you are using Bit to manage your code components, the components are not a part of the codebase. This means that in order to populate the <code>components</code> directory (and all the links in the <code>node_modules</code>), you will need to use bitjs.</p>
+<p>bit-javascript can both fetch components and link them using the command - <code>bitjs import</code>. If you want to automatically install the bit components dependencies after you call <code>npm install</code> or <code>yarn</code> you can add bit-javascript to your <code>package.json</code> file, and configure a post-install hook to run <code>bitjs import</code>. This way, after installing all the packages, bit-javascript will be able to import all of the components and link them.</p>
+<h2 id="how-to-implement-a-new-driver">How to implement a new driver</h2>
+<p>1) create a new npm package &quot;bit-driver-yourLanguage&quot;.
+2) add the package as bit-bin dependency.
+3) in your new package, expose an object &quot;lifecycleHooks&quot; with the following functions: <code>onCreate(component)</code>, <code>onCommit(component)</code>, <code>onExport(component)</code>, <code>onImport(components)</code>. It&apos;s fine to not implement them all if not needed.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cli-reference.html" class="navigation navigation-prev " aria-label="Previous page: CLI Reference">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="drivers.html#javascript" class="navigation navigation-next " aria-label="Next page: JavaScript">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Drivers","level":"1.11","depth":1,"next":{"title":"JavaScript","level":"1.11.1","depth":2,"anchor":"#javascript","path":"drivers.md","ref":"drivers.md#javascript","articles":[{"title":"Runtime Dependency Resolution","level":"1.11.1.1","depth":3,"anchor":"#runtime-dependency-resolution","path":"drivers.md","ref":"drivers.md#runtime-dependency-resolution","articles":[]}]},"previous":{"title":"CLI Reference","level":"1.10","depth":1,"path":"cli-reference.md","ref":"cli-reference.md","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","prism","-highlight"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://teambit.github.io/bit/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"teambit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRODUCTION.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.6.2"},"title":"Bit - distributed component manager","language":"en","gitbook":">= 3.2.0"},"file":{"path":"drivers.md","mtime":"2017-05-18T10:56:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-23T09:03:02.353Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

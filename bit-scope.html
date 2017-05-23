@@ -1,0 +1,874 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bit Scope · Bit - distributed component manager</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="teambit">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bit-scope.html" />
+    
+    
+    <link rel="prev" href="bit-component.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installing Bit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#create-your-first-code-component">
+            
+                    
+                    Create your first code component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#setup-a-remote-scope">
+            
+                    
+                    Setup a Remote Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html#export-a-component">
+            
+                    
+                    Export a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="getting-started.html">
+            
+                <a href="getting-started.html#import-a-component">
+            
+                    
+                    Import a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="getting-started.html">
+            
+                <a href="getting-started.html#modify-a-component">
+            
+                    
+                    Modify a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="getting-started.html">
+            
+                <a href="getting-started.html#use-a-compiler">
+            
+                    
+                    Use a compiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="getting-started.html">
+            
+                <a href="getting-started.html#test-a-component">
+            
+                    
+                    Test a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="getting-started.html">
+            
+                <a href="getting-started.html#find-a-component">
+            
+                    
+                    Find a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="bit-component.html">
+            
+                <a href="bit-component.html">
+            
+                    
+                    Bit Component
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="bit-component.html">
+            
+                <a href="bit-component.html#what-is-a-bit-component">
+            
+                    
+                    What is a Bit Component?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-id">
+            
+                    
+                    Component ID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-versioning">
+            
+                    
+                    Component Versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-documentation">
+            
+                    
+                    Component Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-debugging">
+            
+                    
+                    Component Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-environment">
+            
+                    
+                    Component Environment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="bit-component.html">
+            
+                <a href="bit-component.html#build-environment">
+            
+                    
+                    Build Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="bit-component.html">
+            
+                <a href="bit-component.html#testing-environment">
+            
+                    
+                    Testing Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.5" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html">
+            
+                    
+                    Bit Scope
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#what-is-a-bit-scope">
+            
+                    
+                    What is a Bit Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#component-store">
+            
+                    
+                    Component Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#dependency-management">
+            
+                    
+                    Dependency Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#scope-ci">
+            
+                    
+                    Scope CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#discoverability">
+            
+                    
+                    Discoverability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html">
+            
+                    
+                    Configuring Bit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#general-configuration">
+            
+                    
+                    General configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#bitjson">
+            
+                    
+                    bit.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#scopejson">
+            
+                    
+                    scope.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html">
+            
+                    
+                    Bit on the Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#protocols">
+            
+                    
+                    Protocols
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#setting-up-a-server">
+            
+                    
+                    Setting up a server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#generating-your-ssh-public-key">
+            
+                    
+                    Generating your SSH public key
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html">
+            
+                    
+                    Bit Internals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html#bit-objects">
+            
+                    
+                    Bit Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html#jsdoc-parsing">
+            
+                    
+                    JSDoc parsing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="cli-reference.html">
+            
+                <a href="cli-reference.html">
+            
+                    
+                    CLI Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="drivers.html">
+            
+                <a href="drivers.html">
+            
+                    
+                    Drivers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="drivers.html">
+            
+                <a href="drivers.html#javascript">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="drivers.html">
+            
+                <a href="drivers.html#runtime-dependency-resolution">
+            
+                    
+                    Runtime Dependency Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="bitsource.html">
+            
+                <a href="bitsource.html">
+            
+                    
+                    BitSource
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Bit Scope</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bit-scope">Bit Scope</h1>
+<h2 id="what-is-a-bit-scope">What is a Bit Scope?</h2>
+<p>Bit&apos;s Scope is one of the fundamental entities of Bit. A Scope is a dynamic codebase responsible to end-to-end management of code components.
+Scopes are where components are stored, tested, built and integrate with each other.</p>
+<p>The Scope&apos;s distributed nature is meant to enable teams to create scopes for every different level of abstraction inside the organization.
+For example, a team in an organization may want</p>
+<p>Each component belongs in a scope (or multiple scopes). therefore, the scope&apos;s name appears in the component&apos;s ID path (which consists of owner/scope/box/component).</p>
+<h2 id="dependency-management">Dependency Management</h2>
+<p>Bit&apos;s dependency resolution and management was especially designed for the use code components.</p>
+<p>Therefore, we designed its dependency management mechanism with few major constraints in mind:</p>
+<ol>
+<li><strong><em>Installation (import) performance</em></strong> -
+To make component installation fast, we&apos;re resolving depedencies on export. This design approach makes component installation to be based on bandwidth alone. </li>
+<li><strong><em>Predictable and deterministic</em></strong> - 
+The same dependencies will be installed at the same exact version, anywhere and acoross every machine to avoid dependency hell and deep dependency debugging.</li>
+<li><strong><em>Component availability</em></strong> - 
+Components are cached to make sure specific versions or components you&apos;ve used are always available in your &quot;closest scope&quot;.</li>
+</ol>
+<p>When you build a new component, you can add as many dependencies as you need in the bit.json file.</p>
+<p>The bit export command will ensure the component will be packaged with all its dependencies.</p>
+<p>When bit push is issued, the new component, with all its dependencies, will be all stored/cached on the scope.</p>
+<p>Once a component is pushed to a scope, the receiving scope will try to build and test the component to ensure it is, in fact, isolated.
+bit import will download the component with all of its dependencies in a single call.</p>
+<h4 id="the-benefits-of-on-export-dependency-resolution">The benefits of on-export dependency resolution.</h4>
+<ol>
+<li>Fast build time - When your application builds Bit does nothing but simply downloading a flat list of dependencies. That&apos;s it. Bit doesn&#x2019;t have a dependency tree, so no need for recalculating and downloading more dependencies. This means a faster build time. </li>
+<li>Reliability - Since every component is stored with its dependencies, in a tested version to work with, you can be sure it will keep working in any new environment regardless of any changes made to its dependencies (even if deleted).</li>
+<li>No duplications - Bit knows what are the exact dependencies it needs to grab, so if there are any duplications, it will simply download a single working copy. </li>
+</ol>
+<h2 id="component-dependencies">Component Dependencies</h2>
+<p>As shows in the <a href="configurating-bit.md">configurating bit</a> section, you can list as many code components as dependencies to your own component. Also, the versions of the dependencies will be locked, until you decide to update them. This means that wherever the component is being used, it will have the same dependencies.</p>
+<h2 id="package-dependencies">Package Dependencies</h2>
+<p>Just as you can use other Bit components as dependencies, we also understand that there&apos;s a lot of previous work that have been developed and deployed to other package managers, and code components should be able to depend on them. Bit does it by integrating to other known package source (for example - NPM). However, bit does not handle these dependencies, and will not manage them. If a code component has a package dependency defined, it will tell the user what needs to be installed. So unlike code component dependencies, you will be required to manage your external dependencies by yourself. Bit will help you with letting you know what&apos;s missing, but will not interfere with your dependency resolution process. </p>
+<h2 id="isolated-buildtest">Isolated Build/Test</h2>
+<p>Bit is able to run your component&apos;s buid and test operations in an isolated environment.</p>
+<p>This mechanism uses Bit&apos;s <a href="bit-component.html#component-environment">environment boilerplating</a> to create an ad-hock isolated runtime environment for each code component. This process happens while a component is being committed to the local scope, and exported to a remote scope. </p>
+<p>By utilizing each component&apos;s build and test environments, Bit has the instructions for building and testing components. Also, if a component has a dependency (or even requires an external package from a known source - NPM for example), Bit will retrieve the dependencies when starting the process. This way Bit makes sure that each component is indeed isolated and encapsulated.</p>
+<p>Bit has this isolation engine in order to validate the component&apos;s configuration of package/component dependencies (make sure it&apos;ll function on its own). It fetches the package dependencies (npm modules) and the component dependencies (bit components) in order to assimilate a development environment, it builds and runs the tests, if the test pass it means the dependencies were properly configured.
+It will also help other developers to automatically setup a development environment for the component.
+Component environments (uses for build and test) are actual code components (managed by bit) with an interface they need to implement.</p>
+<p>Bit forces strict rules when it get to building and testing code. If a component needs to be build to run (for example - transpile from TypeScript to ES), and the build process fails when exporting, Bit will fail the exporting process. The same thing happens if a component has a set of tests that failed to run. This is to make sure that no breaking changes are being exported (this behavior can be overridden by using the <code>--force</code> flag when exporting components).</p>
+<h2 id="discoverability">Discoverability</h2>
+<p>One of the biggest problems for developers today is being able to find and reuse existing code components. Bit was created with exactly this problem in mind, so we place high importance on component discoverability.</p>
+<p>Bit has an internal search engine capable of searching all the scopes connected to your computer. This search engine can be accessed from your CLI so you can access external resources without leaving your development environment. The search engine works by indexing components along with their documentation and querying them using fuzzy search techniques like abbreviations and stemming. This allows more flexibility when searching components, because you don&#x2019;t have to remember exactly how you called your component in order to easily retrieve it. Our long-term aim is to introduce a semantic search that will allow developers to describe a component&#x2019;s functionality in natural language and get the most relevant results regardless of the specific phrasing used when naming and documenting components. When we introduce semantic search, you&#x2019;ll be able to use the query &#x2018;is str&#x2019; for example, and get results where the name and documentation use different phrasings, like &#x2018;validate string&#x2019; or &#x2018;check string&#x2019;. Another example would be &apos;convert string to int&apos; which will return components like &apos;parse-int&apos;.</p>
+<p>Finally, the paradigm of keeping your code components in small packages also facilitates discoverability. Normally, while writing and maintaining packages, you need to have a README file that explains the whole project to other developers. Maintaining it means more manual work, which in many cases ends up in out-of-date information. Keeping component documentation right with the code itself means that it will always be up-to-date, accessible and easy to use. Bit search also makes sure to provide you only with the most recent version of each component.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="bit-component.html#testing-environment" class="navigation navigation-prev " aria-label="Previous page: Testing Environment">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bit-scope.html#what-is-a-bit-scope" class="navigation navigation-next " aria-label="Next page: What is a Bit Scope?">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bit Scope","level":"1.5","depth":1,"next":{"title":"What is a Bit Scope?","level":"1.5.1","depth":2,"anchor":"#what-is-a-bit-scope","path":"bit-scope.md","ref":"bit-scope.md#what-is-a-bit-scope","articles":[]},"previous":{"title":"Testing Environment","level":"1.4.6.2","depth":3,"anchor":"#testing-environment","path":"bit-component.md","ref":"bit-component.md#testing-environment","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","prism","-highlight"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://teambit.github.io/bit/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"teambit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRODUCTION.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.6.2"},"title":"Bit - distributed component manager","language":"en","gitbook":">= 3.2.0"},"file":{"path":"bit-scope.md","mtime":"2017-05-18T10:56:16.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-23T09:03:02.353Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,885 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Bit on the Server · Bit - distributed component manager</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="teambit">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="bit-on-the-server.html" />
+    
+    
+    <link rel="prev" href="configuring-bit.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installing Bit
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    Getting Started
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#create-your-first-code-component">
+            
+                    
+                    Create your first code component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#setup-a-remote-scope">
+            
+                    
+                    Setup a Remote Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html#export-a-component">
+            
+                    
+                    Export a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="getting-started.html">
+            
+                <a href="getting-started.html#import-a-component">
+            
+                    
+                    Import a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="getting-started.html">
+            
+                <a href="getting-started.html#modify-a-component">
+            
+                    
+                    Modify a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="getting-started.html">
+            
+                <a href="getting-started.html#use-a-compiler">
+            
+                    
+                    Use a compiler
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="getting-started.html">
+            
+                <a href="getting-started.html#test-a-component">
+            
+                    
+                    Test a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="getting-started.html">
+            
+                <a href="getting-started.html#find-a-component">
+            
+                    
+                    Find a component
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="bit-component.html">
+            
+                <a href="bit-component.html">
+            
+                    
+                    Bit Component
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="bit-component.html">
+            
+                <a href="bit-component.html#what-is-a-bit-component">
+            
+                    
+                    What is a Bit Component?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-id">
+            
+                    
+                    Component ID
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-versioning">
+            
+                    
+                    Component Versioning
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-documentation">
+            
+                    
+                    Component Documentation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-debugging">
+            
+                    
+                    Component Debugging
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="bit-component.html">
+            
+                <a href="bit-component.html#component-environment">
+            
+                    
+                    Component Environment
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.6.1" data-path="bit-component.html">
+            
+                <a href="bit-component.html#build-environment">
+            
+                    
+                    Build Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6.2" data-path="bit-component.html">
+            
+                <a href="bit-component.html#testing-environment">
+            
+                    
+                    Testing Environment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html">
+            
+                    
+                    Bit Scope
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#what-is-a-bit-scope">
+            
+                    
+                    What is a Bit Scope?
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#component-store">
+            
+                    
+                    Component Store
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#dependency-management">
+            
+                    
+                    Dependency Management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#scope-ci">
+            
+                    
+                    Scope CI
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="bit-scope.html">
+            
+                <a href="bit-scope.html#discoverability">
+            
+                    
+                    Discoverability
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html">
+            
+                    
+                    Configuring Bit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#general-configuration">
+            
+                    
+                    General configuration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#bitjson">
+            
+                    
+                    bit.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="configuring-bit.html">
+            
+                <a href="configuring-bit.html#scopejson">
+            
+                    
+                    scope.json
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.7" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html">
+            
+                    
+                    Bit on the Server
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#protocols">
+            
+                    
+                    Protocols
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#setting-up-a-server">
+            
+                    
+                    Setting up a server
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="bit-on-the-server.html">
+            
+                <a href="bit-on-the-server.html#generating-your-ssh-public-key">
+            
+                    
+                    Generating your SSH public key
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html">
+            
+                    
+                    Bit Internals
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html#bit-objects">
+            
+                    
+                    Bit Objects
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="bit-internals.html">
+            
+                <a href="bit-internals.html#jsdoc-parsing">
+            
+                    
+                    JSDoc parsing
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="cli-reference.html">
+            
+                <a href="cli-reference.html">
+            
+                    
+                    CLI Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="drivers.html">
+            
+                <a href="drivers.html">
+            
+                    
+                    Drivers
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="drivers.html">
+            
+                <a href="drivers.html#javascript">
+            
+                    
+                    JavaScript
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1.1" data-path="drivers.html">
+            
+                <a href="drivers.html#runtime-dependency-resolution">
+            
+                    
+                    Runtime Dependency Resolution
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="bitsource.html">
+            
+                <a href="bitsource.html">
+            
+                    
+                    BitSource
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >Bit on the Server</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="bit-on-the-server">Bit on the Server</h1>
+<p>Bit is up and foremost a collaboration tool. To do so, you will need to set up a remote server to do any collaboration on <a href="bit-component.html">bit components</a> (well, to be technically correct - you can import/export components directory from individual scopes, but it will not scale).</p>
+<p>The best collaboration method is to set up a remote scope that all the consumers will have access to import and export component from. In this section, we&apos;ll refer to the &apos;remote scope&apos; as &apos;bit server&apos;. However, you will notice that the amount of resources used by a remote scope is so small, that you rarely need an entire server for it.</p>
+<p>To set up a bit server you will need to decide on the type of protocol you need. Currently bit supports 2 protocols, which you will need to choose between them, according to your workflow. Then use this simple guide to run the commands required to create and connect the bit server.</p>
+<p>Due to the fact that a bit server in used only as a collaboration tool, a bit server is basically a bare repository. Meaning a bit scope with no working directory.</p>
+<h2 id="protocols">Protocols</h2>
+<p>Bit currently supports 2 types of communication protocol, for the scopes to communicate with each other. Local and SSH.</p>
+<p>Each protocol has its own use cases, and here you&apos;ll learn when to use which. </p>
+<h3 id="local-protocol">Local Protocol</h3>
+<p>Bit&apos;s local protocol is based on accessing folders and files in your local file system. This means that a bit server which uses the local protocol will not be accessible for users that want to connect to the bit server from outside of the machine. So using this protocol is best for local work only, such as evaluating bit or developing it.</p>
+<p>To use it, simply connect to the bit server by using this command:</p>
+<pre class="language-"><code class="lang-sh">bit remote add file://<span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>to<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>remote<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>scope<span class="token operator">&gt;</span>
+</code></pre>
+<h3 id="ssh-protocol">SSH Protocol</h3>
+<p>A common transport protocol for Bit when self-hosting is over SSH. This is because SSH access to servers is already set up in most places &#x2013; and if it isn&#x2019;t, it&#x2019;s easy to do. SSH is also an authenticated network protocol; and because it&#x2019;s ubiquitous, it&#x2019;s generally easy to set up and use.</p>
+<p>This makes SSH to be the preferred way for collaboration when developing components to remote scopes.</p>
+<p>To add a bit server over SSH, run this command:</p>
+<pre class="language-"><code class="lang-sh">bit remote add ssh://bit-server:/<span class="token operator">&lt;</span>path<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>to<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>remote<span class="token operator">&gt;</span>/<span class="token operator">&lt;</span>scope<span class="token operator">&gt;</span>
+</code></pre>
+<h2 id="setting-up-a-server">Setting up a server</h2>
+<p>In this section we&apos;ll explain how to use a remote server to setup as many <a href="bit-scope.html">scopes</a> as needed.</p>
+<h4 id="prerequisites">Prerequisites</h4>
+<ol>
+<li>*nix server.</li>
+<li>User for <code>bit</code> (with <code>.ssh</code> and <code>authorized_keys</code>, for remote workflow).</li>
+</ol>
+<h3 id="create-a-remote-scope">Create a remote scope</h3>
+<p>Once you have all prerequisites, the one thing left is to run the <code>bit init</code> command with the <code>--bare</code> flag, to create a scope without a working directory.</p>
+<pre class="language-"><code class="lang-sh"><span class="token function">su</span> bit
+<span class="token function">mkdir</span> /opt/bit
+<span class="token function">cd</span> /opt/bit
+<span class="token function">mkdir</span> first-scope
+<span class="token function">cd</span> first-scope
+bit init --bare
+</code></pre>
+<p>Now add your own public SSH key to the <code>authorized_keys</code> list of the user <code>bit</code>. This will allow you to import and export components hosted in <code>first-scope</code>.</p>
+<p>Let&apos;s add our <code>first-scope</code> as a remote scope to a newly create local scope on our development machine. I&apos;ll assume that our server is named <code>bit-server</code>, for the sake of this example.</p>
+<pre class="language-"><code class="lang-sh"><span class="token function">mkdir</span> my-project
+bit init
+bit remote add ssh://bit-server:/opt/bit/first-scope
+bit create hello-world
+bit commit hello-world <span class="token string">&apos;testing remote&apos;</span>
+bit <span class="token function">export</span> @this/hello-world first @first-scope
+</code></pre>
+<p>Notice that when working with scopes, you need to prepand the scope&apos;s name with @. Also not that when working with your local scope, you can use <code>@this</code> to tell bit you are doing actions on it, and not on remote scopes.</p>
+<h2 id="generating-your-ssh-public-key">Generating your SSH public key</h2>
+<p>These docs will describe the process of creating SSH key pair for Unix, seeing that it&apos;s a similar process across all operating systems.</p>
+<ol>
+<li><p>Use this command to generate a new SSH key pair</p>
+<p><code>ssh-keygen -t rsa -b 4096 -C &quot;your_email@example.com&quot;</code></p>
+</li>
+<li><p>View the content of <code>~/.ssh</code> directory, and look for a pair of files named <code>id_rsa</code> and <code>id_rsa.pub</code>.</p>
+</li>
+<li><p>Copy the content of the <code>id_rsa.pub</code>, and add it to your server&apos;s <code>authorized_keys</code>.</p>
+</li>
+</ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="configuring-bit.html#scopejson" class="navigation navigation-prev " aria-label="Previous page: scope.json">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="bit-on-the-server.html#protocols" class="navigation navigation-next " aria-label="Next page: Protocols">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Bit on the Server","level":"1.7","depth":1,"next":{"title":"Protocols","level":"1.7.1","depth":2,"anchor":"#protocols","path":"bit-on-the-server.md","ref":"bit-on-the-server.md#protocols","articles":[]},"previous":{"title":"scope.json","level":"1.6.3","depth":2,"anchor":"#scopejson","path":"configuring-bit.md","ref":"configuring-bit.md#scopejson","articles":[]},"dir":"ltr"},"config":{"plugins":["sitemap","prism","-highlight"],"root":"./docs","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"sitemap":{"hostname":"https://teambit.github.io/bit/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"prism":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"teambit","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"INTRODUCTION.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{"version":"0.6.2"},"title":"Bit - distributed component manager","language":"en","gitbook":">= 3.2.0"},"file":{"path":"bit-on-the-server.md","mtime":"2017-05-07T12:53:07.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-05-23T09:03:02.353Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
