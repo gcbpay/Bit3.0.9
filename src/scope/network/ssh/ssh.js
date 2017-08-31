@@ -101,17 +101,12 @@ export default class SSH implements Network {
         stream
           .on('data', (response) => {
             res += response.toString();
-            logger.debug(`ssh, onData ${res.length}`);
           })
           .on('exit', (code) => {
             logger.error(`ssh: server had been exiting before closing. Exit code: ${code}`);
-            if (commandName === '_put') res = res.replace(payload, '');
             return code && code !== 0 ?
               reject(errorHandler(code, err)) :
               resolve(clean(res));
-          })
-          .on('end', (code) => {
-            logger.error(`ssh: onEnd code: ${code}`);
           })
           .on('close', (code, signal) => {
             if (commandName === '_put') res = res.replace(payload, '');
@@ -135,8 +130,7 @@ export default class SSH implements Network {
     try {
       return unpackCommand(data);
     } catch (err) {
-      // logger.error(`unpackCommand found on error "${err}", while paring the following string: ${data}`);
-      logger.error(`unpackCommand found on error "${err}", while paring the following string:`);
+      logger.error(`unpackCommand found on error "${err}", while paring the following string: ${data}`);
       throw new SSHInvalidResponse(data);
     }
   }
